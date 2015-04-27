@@ -5,10 +5,15 @@ This Dockerfile can be used to build an EllasticSearch image with Kibana, that c
 Note: Data Source is CouchBase here
 
 `AWS_ACCESS_KEY_ID`  ---> Your AWS Access key
+
 `AWS_SECRET_KEY`     ---> Your AWS Secret Key
+
 `ES_CLUSTER_NAME`    ---> ElasticSearch Cluster Name
+
 `AWS_SECURITY_GROUP` ---> AWS Security Group Name
+
 `AWS_REGION`         ---> AWS Region
+
 `HOST_IP`            ---> Host Machine IP the Docker is running on
 
 
