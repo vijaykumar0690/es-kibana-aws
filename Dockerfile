@@ -23,7 +23,7 @@ EXPOSE 9200 9300 9091
 #Kibana
 RUN \
     curl -s https://download.elastic.co/kibana/kibana/kibana-4.0.2-linux-x64.tar.gz | tar -C /opt -xz && \
-    mv /opt/kibana-4.0.2-linux-x64 /opt/kibana && \
+    mv /opt/kibana-4.0.2-linux-x64 /opt/kibana
 ADD kibana.conf /etc/supervisor/conf.d/kibana.conf
 EXPOSE 5601
 CMD [ "/usr/bin/supervisord", "-n", "-c", "/etc/supervisor/supervisord.conf" ]
