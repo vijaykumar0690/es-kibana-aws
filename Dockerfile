@@ -16,7 +16,6 @@ RUN dpkg -i elasticsearch-1.5.1.deb
 RUN /usr/share/elasticsearch/bin/plugin -install mobz/elasticsearch-head
 RUN /usr/share/elasticsearch/bin/plugin -install lmenezes/elasticsearch-kopf
 RUN /usr/share/elasticsearch/bin/plugin install elasticsearch/elasticsearch-cloud-aws/2.5.0
-RUN /usr/share/elasticsearch/bin/plugin -install transport-couchbase -url http://packages.couchbase.com.s3.amazonaws.com/releases/elastic-search-adapter/2.0.0/elasticsearch-transport-couchbase-2.0.0.zip
 ADD elasticsearch.conf /etc/supervisor/conf.d/elasticsearch.conf
 EXPOSE 9200 9300 9091 
 
