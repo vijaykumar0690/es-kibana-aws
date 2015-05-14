@@ -2,13 +2,11 @@
 
 This Dockerfile can be used to build an EllasticSearch image with Kibana, that can be used to run  in AWS, with auto discovery by passing the appropriate ENV variables
 
-Note: Data Source is CouchBase here
-
 `AWS_ACCESS_KEY_ID`  ---> Your AWS Access key
 
 `AWS_SECRET_KEY`     ---> Your AWS Secret Key
 
-`ES_CLUSTER_NAME`    ---> ElasticSearch Cluster Name
+`ES_CLUSTER_NAME`    ---> ElasticSearch Cluster Name *Important No default cluster name set
 
 `AWS_SECURITY_GROUP` ---> AWS Security Group Name
 
